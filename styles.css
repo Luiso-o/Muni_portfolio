@@ -11967,26 +11967,44 @@ textarea.form-control-lg {
   }
 }
 .encabezado {
-  background: #d3c4b5;
+  background: rgba(0, 0, 0, 0.187);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.7;
+  z-index: 1000;
 }
 
 .navbar-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+  gap: 50px;
   list-style: none;
   padding-left: 0;
 }
 
+#header {
+  transition: opacity 0.8s ease, background-color 0.5s ease;
+  opacity: 1;
+}
+
+#header.oculto {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .nav-link {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   padding: 10px 15px;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom-color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 .nav-link:hover {
-  border-bottom-color: #ffffff;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -12038,6 +12056,11 @@ textarea.form-control-lg {
   color: white;
 }
 
+.portfolio-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 .aboutMe {
   padding: 50px 0;
 }
@@ -12084,10 +12107,10 @@ textarea.form-control-lg {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
   font-size: 20px;
   color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: antiquewhite;
 }/*# sourceMappingURL=styles.css.map */
