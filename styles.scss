@@ -1,0 +1,18 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import "./scss/header" ;
+@import "./scss/portfolio" ;
+@import "./scss/footer";
+@import "./scss/aboutMe.scss";
+@import "./scss/inicio.scss";
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    color:black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  

@@ -1,0 +1,29 @@
+$white: #ffffff;
+$color-verde-agua: #A7EDDF;
+$color-coral-suave: #FF9A8A;
+$background: mix($color-verde-agua, $color-coral-suave, 50%);
+$hover-border-color: $white; 
+
+.encabezado {
+  background: $background;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-link {
+  color: $white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+
+  &:hover {
+    border-bottom-color: $hover-border-color; 
+  }
+}

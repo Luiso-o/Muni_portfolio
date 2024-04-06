@@ -1,0 +1,12 @@
+$color-verde-agua: #A7EDDF;
+$color-coral-suave: #FF9A8A;
+$backgound: mix($color-verde-agua, $color-coral-suave, 50%);
+
+.footer{
+    color: white;
+    background: $backgound;
+}
+
+.footer i {
+    color: white;
+}
