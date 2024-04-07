@@ -11997,14 +11997,52 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  color: #fff;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   text-decoration: none;
   padding: 10px 15px;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  display: inline-block;
 }
 .nav-link:hover {
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  animation: underlineAnimation 0.3s ease forwards;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+@keyframes underlineAnimation {
+  from {
+    left: 50%;
+    width: 0;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}
+.portfolio {
+  position: relative;
+  z-index: 1;
+  background: antiquewhite;
 }
 
 .container {
@@ -12084,6 +12122,9 @@ textarea.form-control-lg {
 }
 
 .inicio {
+  position: sticky;
+  top: 0;
+  z-index: 0;
   background: url("/images/fondo.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
@@ -12097,12 +12138,9 @@ textarea.form-control-lg {
   align-items: center;
 }
 
-.inicio p {
-  max-width: 600px;
-  line-height: 1.4;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.393);
-  border-radius: 10px;
+.inicio img {
+  max-width: 100%;
+  max-height: 90%;
 }
 
 body {

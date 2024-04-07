@@ -1,4 +1,7 @@
 .inicio { 
+    position: sticky;
+    top: 0;
+    z-index: 0;
     background: url("/images/fondo.jpg") no-repeat center center; 
     background-size: cover; 
     color: #ffffff; 
@@ -12,11 +15,7 @@
     align-items: center;
   }
   
-  .inicio p {
-    max-width: 600px;
-    line-height: 1.4;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.393); 
-    border-radius: 10px; 
+  .inicio img {
+    max-width: 100%; 
+    max-height: 90%; 
   }
-  
