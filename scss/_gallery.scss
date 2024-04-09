@@ -1,0 +1,111 @@
+//titulo
+.title-gallery {
+    position: relative;
+    text-align: center;
+
+    span {
+      position: relative;
+      z-index: 1;
+      background: #f3edda; 
+      padding: 0 15px;
+      font-weight: bold;
+      color: $gray-600;
+      font-size: 25px;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 2px;
+        width: 70vw;
+        background-color: $gray-600;
+        z-index: -1;
+      }
+  
+      &::before {
+        left: calc(-100% - 15px);
+      }
+  
+      &::after {
+        right: calc(-100% - 15px);
+      }
+    }
+  }
+  
+//imagenes
+img{
+  width: 100%;
+}
+
+.row{
+    position: relative;
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column{
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img{
+  margin-top: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.column img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 900px){
+  .column{
+    flex: 50%;
+  }
+}
+
+@media(max-width: 800px){
+  .column{
+    flex: 100%;
+  }
+}
+
+//modal
+/* Estilo para la modal (fondo) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Estilo para la imagen dentro de la modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 70%; /* You can adjust this */
+}
+
+/* Botón de cerrar (x) */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+

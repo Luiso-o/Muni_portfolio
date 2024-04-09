@@ -1,22 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .portfolio{
   position: relative;
-  z-index: 1; 
-  background: antiquewhite;
+  margin-bottom: 40px;
+ 
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
   }
   
   .contenedor-imagenes {
     position: relative;
     width: 400px; 
     height: 600px; 
+    margin-left: 80px;
     overflow: hidden;
     border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   }
   
   .contenedor-imagenes img {
@@ -28,20 +32,45 @@
     object-fit: cover;
     transition: opacity 2s ease-in-out; 
   }
+
+  .title-portfolio{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .descripcion {
+    font-size: 30px;
+    position: relative;
+    width: 50%; 
+    height: 600px; 
+    background-image: url('/images/carton.png');
+    background-size: cover;
+    background-position: center; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
   
+  .descripcion p {
+    text-align: center; 
+    color: #474747; 
+    font-family: 'Indie Flower', cursive;
+  }
+  
+
   .linea-separacion {
     height: 2px; 
-    background-color: #ccc; 
+    background-color: #a88a8a; 
     margin: 20px 0;  
 }
   
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .imagen-contenedor, .descripcion {
-      width: 100%;
-    }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
+
+  .imagen-contenedor, .descripcion {
+    width: 100%;
+  }
+}
   
