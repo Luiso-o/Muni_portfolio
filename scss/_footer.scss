@@ -1,17 +1,13 @@
-$color-verde-agua: #A7EDDF;
-$color-coral-suave: #FF9A8A;
-$background: mix($color-verde-agua, $color-coral-suave, 50%); 
+$text-color: aliceblue;
 
-.footer{
-    color: white;
-    background: $background; 
+.footer {
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-.footer i {
-    color: white;
+.footer, i, .portfolio-link {
+    color: $text-color;
 }
 
 .portfolio-link {
     text-decoration: none;
-    color: aliceblue; 
 }

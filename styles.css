@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11967,12 +11968,12 @@ textarea.form-control-lg {
   }
 }
 .encabezado {
-  background: rgba(0, 0, 0, 0.187);
-  position: fixed;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.187);
+  width: 100%;
   transition: 0.7;
   z-index: 1000;
 }
@@ -11981,7 +11982,6 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   width: 100%;
-  gap: 50px;
   list-style: none;
   padding-left: 0;
 }
@@ -12055,25 +12055,53 @@ textarea.form-control-lg {
   height: auto;
 }
 
+/* Ajustes para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Hace que los enlaces del menú se apilen verticalmente */
+    gap: 20px; /* Añade un poco más de espacio entre los elementos del menú */
+  }
+  .navbar-toggler {
+    display: block; /* Asegura que el toggler se muestre en dispositivos móviles */
+  }
+  .nav-link {
+    font-size: 18px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
+  }
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo para el menú desplegable para mejorar el contraste */
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); /* Estilo adicional para soportar fondos difuminados */
+  }
+}
+/* Ajustes para dispositivos medianos (tablets) */
+@media (min-width: 769px) {
+  .navbar-nav {
+    gap: 30px; /* Espaciado ligeramente mayor para tablets */
+  }
+  .nav-link {
+    font-size: 20px; /* Tamaño de fuente ligeramente mayor para tablets */
+  }
+}
 .portfolio {
   position: relative;
-  z-index: 1;
-  background: antiquewhite;
+  margin-bottom: 40px;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 
 .contenedor-imagenes {
   position: relative;
   width: 400px;
   height: 600px;
+  margin-left: 80px;
   overflow: hidden;
   border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 .contenedor-imagenes img {
@@ -12087,9 +12115,33 @@ textarea.form-control-lg {
   transition: opacity 2s ease-in-out;
 }
 
+.title-portfolio {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.descripcion {
+  font-size: 30px;
+  position: relative;
+  width: 50%;
+  height: 600px;
+  background-image: url("/images/carton.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.descripcion p {
+  text-align: center;
+  color: #474747;
+  font-family: "Indie Flower", cursive;
+}
+
 .linea-separacion {
   height: 2px;
-  background-color: #ccc;
+  background-color: #a88a8a;
   margin: 20px 0;
 }
 
@@ -12102,29 +12154,29 @@ textarea.form-control-lg {
   }
 }
 .footer {
-  color: white;
-  background: #d3c4b5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.footer i {
-  color: white;
+.footer, i, .portfolio-link {
+  color: aliceblue;
 }
 
 .portfolio-link {
   text-decoration: none;
-  color: aliceblue;
 }
 
 .aboutMe {
   padding: 50px 0;
+  color: black;
 }
 
 .aboutMe img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 20%;
   display: block;
   margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 .aboutMe h2, .aboutMe .h2 {
@@ -12137,11 +12189,35 @@ textarea.form-control-lg {
   margin-top: 20px;
 }
 
+.header-container {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(1, 161, 103);
+}
+
+.muni-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.muni-container img {
+  flex: 1 1 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  width: 50px;
+  height: 500px;
+}
+
 .inicio {
   position: sticky;
   top: 0;
   z-index: 0;
-  background: url("/images/fondo.jpg") no-repeat center center;
+  background: url("/images/inicio.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
   text-align: center;
@@ -12152,19 +12228,132 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.inicio::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(to top, #f3edda, transparent);
+  z-index: 1;
 }
 
 .inicio img {
-  max-width: 100%;
+  max-width: 400px;
   max-height: 90%;
 }
 
+.title-gallery {
+  position: relative;
+  text-align: center;
+}
+.title-gallery span {
+  position: relative;
+  z-index: 1;
+  background: #f3edda;
+  padding: 0 15px;
+  font-weight: bold;
+  color: #6c757d;
+  font-size: 25px;
+}
+.title-gallery span::before, .title-gallery span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 70vw;
+  background-color: #6c757d;
+  z-index: -1;
+}
+.title-gallery span::before {
+  left: calc(-100% - 15px);
+}
+.title-gallery span::after {
+  right: calc(-100% - 15px);
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.column img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 100%;
+  }
+}
+/* Estilo para la modal (fondo) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Estilo para la imagen dentro de la modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 70%; /* You can adjust this */
+}
+
+/* Botón de cerrar (x) */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 body {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: antiquewhite;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #f3edda;
 }/*# sourceMappingURL=styles.css.map */

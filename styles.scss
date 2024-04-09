@@ -6,13 +6,19 @@
 @import "./scss/footer";
 @import "./scss/aboutMe.scss";
 @import "./scss/inicio.scss";
+@import "./scss/portraits.scss";
+@import "./scss/gallery.scss";
+
+$background: #f3edda;
+$general-font: "Josefin Sans", sans-serif;
+$letter-color: white;
 
 body {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
-    color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
+    font-family: $general-font;
+    font-size: 20px;
+    color: $letter-color;
+    background-color: $background;
 }
