@@ -12222,11 +12222,13 @@ textarea.form-control-lg {
   height: 500px;
 }
 
-.inicio {
+.container-inicio {
   position: sticky;
   top: 0;
   z-index: 0;
-  background: url("/images/inicio.jpg") no-repeat center center;
+  background-image: url("/images/inicio.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   text-align: center;
   width: 100%;
@@ -12237,11 +12239,11 @@ textarea.form-control-lg {
   align-items: center;
   transition: opacity 0.5s ease;
 }
-.inicio img {
+.container-inicio img {
   max-width: 400px;
 }
 
-.inicio::after {
+.container-inicio::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -12250,40 +12252,6 @@ textarea.form-control-lg {
   height: 5%;
   background: linear-gradient(to top, #f3edda, transparent);
   z-index: 1;
-}
-
-.title-gallery {
-  position: fixed;
-  text-align: center;
-  left: 50%;
-  top: 52%;
-  transform: translateX(-50%);
-}
-.title-gallery span {
-  position: relative;
-  z-index: 1;
-  background: #f3edda;
-  padding: 0 15px;
-  font-weight: bold;
-  color: #6c757d;
-  font-size: 25px;
-  border-radius: 25px;
-}
-.title-gallery span::before, .title-gallery span::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 2px;
-  width: 70vw;
-  background-color: #6c757d;
-  z-index: -1;
-}
-.title-gallery span::before {
-  left: calc(-100% - 15px);
-}
-.title-gallery span::after {
-  right: calc(-100% - 15px);
 }
 
 img {
@@ -12305,10 +12273,10 @@ img {
 }
 
 .column img {
+  width: 100%;
   margin-top: 8px;
   cursor: pointer;
   transition: box-shadow 0.5s ease;
-  width: 100%;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -12359,6 +12327,39 @@ img {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.title-gallery {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title-gallery span {
+  position: relative;
+  z-index: 1;
+  background: #f3edda;
+  padding: 0 15px;
+  font-weight: bold;
+  color: #6c757d;
+  font-size: 25px;
+  border-radius: 25px;
+}
+.title-gallery span::before, .title-gallery span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 70vw;
+  background-color: #6c757d;
+  z-index: -1;
+}
+.title-gallery span::before {
+  left: calc(-100% - 15px);
+}
+.title-gallery span::after {
+  right: calc(-100% - 15px);
 }
 
 html, body {

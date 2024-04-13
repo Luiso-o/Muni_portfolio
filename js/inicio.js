@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
   if (!isThrottled) {
     var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    var inicioSection = document.querySelector('.inicio');
+    var inicioSection = document.querySelector('.container-inicio');
     var portfolioSection = document.querySelector('.portfolio');
     var titleGallery = document.querySelector('.title-gallery');
 
