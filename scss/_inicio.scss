@@ -1,19 +1,22 @@
+//imagen de inicio
 .inicio { 
     position: sticky;
     top: 0;
     z-index: 0;
     background: url("/images/inicio.jpg") no-repeat center center; 
     background-size: cover; 
-    color: #ffffff; 
     text-align: center; 
-    font-size: 2em; 
-    font-weight: bold;
+    width: 100%;
     min-height: 400px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: opacity 0.5s ease;
+
+    img {
+      max-width: 400px; 
+    }
   }
 
   .inicio::after {
@@ -28,7 +31,3 @@
   }
   
   
-  .inicio img {
-    max-width: 400px; 
-    max-height: 90%; 
-  }
