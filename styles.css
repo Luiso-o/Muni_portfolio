@@ -12226,7 +12226,7 @@ textarea.form-control-lg {
   position: sticky;
   top: 0;
   z-index: 0;
-  background-image: url("images/inicio.jpg");
+  background-image: url("/static/media/background-init.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -12254,6 +12254,11 @@ textarea.form-control-lg {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .container-inicio {
+    min-height: 200px;
+  }
+}
 img {
   width: 100%;
 }
