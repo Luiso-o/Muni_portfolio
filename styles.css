@@ -12054,31 +12054,27 @@ textarea.form-control-lg {
   height: auto;
 }
 
-/* Ajustes para dispositivos pequeños (móviles) */
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: column; /* Hace que los enlaces del menú se apilen verticalmente */
-    gap: 20px; /* Añade un poco más de espacio entre los elementos del menú */
-  }
-  .navbar-toggler {
-    display: block; /* Asegura que el toggler se muestre en dispositivos móviles */
-  }
+@media (max-width: 1025px) {
   .nav-link {
-    font-size: 18px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
-  }
-  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo para el menú desplegable para mejorar el contraste */
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px); /* Estilo adicional para soportar fondos difuminados */
+    font-size: 20px;
   }
 }
-/* Ajustes para dispositivos medianos (tablets) */
-@media (min-width: 769px) {
+@media (max-width: 768px) {
   .navbar-nav {
-    gap: 30px; /* Espaciado ligeramente mayor para tablets */
+    flex-direction: column;
+    gap: 20px;
   }
   .nav-link {
-    font-size: 20px; /* Tamaño de fuente ligeramente mayor para tablets */
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav {
+    gap: 30px;
+  }
+  .nav-link {
+    font-size: 20px;
   }
 }
 .portfolio {
@@ -12204,24 +12200,6 @@ textarea.form-control-lg {
   background-color: rgb(1, 161, 103);
 }
 
-.muni-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-}
-
-.muni-container img {
-  flex: 1 1 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
-  width: 50px;
-  height: 500px;
-}
-
 .container-inicio {
   position: sticky;
   top: 0;
@@ -12257,6 +12235,18 @@ textarea.form-control-lg {
 @media (max-width: 768px) {
   .container-inicio {
     min-height: 200px;
+    padding: 10px;
+  }
+  .container-inicio img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .container-inicio {
+    min-height: 150px;
+  }
+  .container-inicio img {
+    max-width: 200px;
   }
 }
 img {
@@ -12367,6 +12357,21 @@ img {
   right: calc(-100% - 15px);
 }
 
+@media (max-width: 768px) {
+  .title-gallery span {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .title-gallery span::before,
+  .title-gallery span::after {
+    width: 50vw;
+  }
+}
+@media (max-width: 480px) {
+  .title-gallery span {
+    font-size: 16px;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;

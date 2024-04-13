@@ -36,4 +36,21 @@
         }
       }
     }
-    
+
+@media (max-width: 768px) {
+  .title-gallery span {
+      font-size: 18px;  
+      padding: 0 10px;
+  }
+  
+  .title-gallery span::before,
+  .title-gallery span::after {
+      width: 50vw;  
+  }
+}
+  
+@media (max-width: 480px) {
+    .title-gallery span {
+        font-size: 16px; 
+      }
+  }
