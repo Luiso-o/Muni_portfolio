@@ -28,22 +28,3 @@
     background-color: rgb(1, 161, 103);
   }
   
-
-  //borrar
-  .muni-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-content: center; 
-    width: 100%;
-  }
-  
-  .muni-container img {
-    flex: 1 1 200px; 
-    object-fit: cover;
-    border-radius: 5px;
-    width: 50px;
-    height: 500px;
-  }
-  
