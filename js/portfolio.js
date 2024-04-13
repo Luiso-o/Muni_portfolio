@@ -1,4 +1,5 @@
-function transicionDeImagenes(imagenes, contenedorId) {
+//crea un transicion de imagenes en un contenedor
+/*function transicionDeImagenes(imagenes, contenedorId) {
   const contenedor = document.getElementById(contenedorId);
 
   contenedor.innerHTML = '';
@@ -38,4 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
     '/images/img8.jpg',
     '/images/img9.jpg'
   ], 'contenedorImagenes3');
-});
+});*/
