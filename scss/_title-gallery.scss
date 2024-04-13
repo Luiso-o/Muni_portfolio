@@ -1,0 +1,39 @@
+//titulo
+.title-gallery {
+    position: fixed; 
+    text-align: center;
+    left: 50%; 
+    transform: translateX(-50%); 
+    
+      span {
+        position: relative;
+        z-index: 1;
+        background: #f3edda; 
+        padding: 0 15px;
+        font-weight: bold;
+        color: $gray-600;
+        font-size: 25px;
+        border-radius: 25px;
+    
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 2px;
+          width: 70vw;
+          background-color: $gray-600;
+          z-index: -1;
+        }
+    
+        &::before {
+          left: calc(-100% - 15px);
+        }
+    
+        &::after {
+          right: calc(-100% - 15px);
+        }
+      }
+    }
+    
