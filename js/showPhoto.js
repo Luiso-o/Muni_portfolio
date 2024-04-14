@@ -28,3 +28,34 @@ window.onclick = function(event) {
 document.addEventListener('keydown', function(event) {
   if (event.key === "Escape") closeModal();
 });
+
+//direcccionales modal
+var currentIndex = 0; 
+var images = document.querySelectorAll(".column img"); 
+
+function openModal(src, index) {
+  modal.style.display = "flex";
+  modalImg.src = src;
+  navbar.style.display = "none";
+  currentIndex = index; 
+}
+
+function changeImage(step) {
+  currentIndex = (currentIndex + step + images.length) % images.length;
+  modalImg.src = images[currentIndex].src;
+}
+
+images.forEach((img, index) => {
+  img.addEventListener('click', () => openModal(img.src, index));
+});
+
+document.querySelector('.prev').addEventListener('click', () => changeImage(-1));
+document.querySelector('.next').addEventListener('click', () => changeImage(1));
+
+close.onclick = closeModal;
+window.onclick = function(event) {
+  if (event.target === modal) closeModal();
+};
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") closeModal();
+});
