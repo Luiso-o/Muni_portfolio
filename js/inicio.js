@@ -47,4 +47,3 @@ function convertColorToRGBA(color, opacity) {
   }
   return color; 
 }
-

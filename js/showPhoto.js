@@ -1,32 +1,30 @@
-// Obtén los elementos
+//mostrar la imagen al hacer click en ella
 var modal = document.getElementById("myModal");
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("imgModal");
 var captionText = document.getElementById("caption");
 var images = document.querySelectorAll(".column img");
 var close = document.getElementsByClassName("close")[0];
 var navbar = document.querySelector('.navbar');
 
-// Añade un evento de clic a cada imagen
-images.forEach(img => {
-  img.addEventListener('click', function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    navbar.style.display = "none";
-  });
-});
+function openModal(src) {
+  modal.style.display = "flex";
+  modalImg.src = src;
+  navbar.style.display = "none";
+}
 
-// Cuando se hace clic en <span> (x), cierra la modal
-close.onclick = function() { 
+function closeModal() {
   modal.style.display = "none";
   navbar.style.display = "flex";
 }
 
-// Cierra la modal al hacer clic fuera de la imagen
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    navbar.classList.remove('disabled-navbar');
-  }
-}
+images.forEach(img => {
+  img.addEventListener('click', () => openModal(img.src));
+});
 
+close.onclick = closeModal;
+window.onclick = function(event) {
+  if (event.target === modal) closeModal();
+};
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") closeModal();
+});
