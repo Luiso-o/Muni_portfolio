@@ -12312,16 +12312,6 @@ img {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 900px) {
-  .column {
-    flex: 50%;
-  }
-}
-@media (max-width: 800px) {
-  .column {
-    flex: 100%;
-  }
-}
 .modal-content {
   display: block;
   max-width: 90%;
@@ -12332,6 +12322,9 @@ img {
 }
 
 .modal {
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   display: none;
   position: fixed;
   z-index: 2;
@@ -12344,6 +12337,7 @@ img {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.2s ease-in-out;
 }
 
 /* Botón de cerrar (x) */
@@ -12357,6 +12351,16 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 900px) {
+  .column {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .column {
+    flex-basis: 100%;
+  }
+}
 .title-gallery {
   position: fixed;
   text-align: center;
