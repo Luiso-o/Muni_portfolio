@@ -61,63 +61,17 @@
   </div>
 
   <div class="container portfolio mt-5">
-    <!-- Modal Contenedor de Imagen -->
     <div id="myModal" class="modal">
-      <!-- Parte de la modal - donde se mostrará la imagen -->
-      <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
-      <img class="modal-content" id="imgModal">
-      <div id="caption"></div>
-      <a class="prev">👈</a>
-      <a class="next">👉</a>
+        <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+        <img class="modal-content" id="imgModal">
+        <div id="caption"></div>
+        <a class="prev">👈</a>
+        <a class="next">👉</a>
     </div>
+    <!--gestor de imagenes-->
+    <div class="row" id="imageRow"></div>
+</div>
 
-    <div class="row row-img">
-      <div class="column">
-        <img src="gallery/img1.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img2.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img3.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img4.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img5.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img6.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img7.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img8.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img9.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-      </div>
-      <div class="column">
-        <img src="gallery/img10.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img11.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img12.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img13.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img14.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img15.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img16.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img17.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img18.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-      </div>
-      <div class="column">
-        <img src="gallery/img19.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img20.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img21.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img22.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img23.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img24.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img25.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img26.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img27.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-      </div>
-      <div class="column">
-        <img src="gallery/img28.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img29.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img30.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img31.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img32.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img33.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img34.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img35.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-        <img src="gallery/img36.jpg" loading="lazy" class="img-fluid" alt="La imagen no esta disponible 😢">
-      </div>
-    </div>
-  </div>
 
   <section class="footer">
     <footer class="text-center py-3">
@@ -158,6 +112,7 @@
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/showPhoto.js"></script>
+  <script src="js/cargarImagenesGallery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
