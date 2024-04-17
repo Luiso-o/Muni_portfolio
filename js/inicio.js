@@ -1,3 +1,42 @@
+// Transición de imágenes
+document.addEventListener('DOMContentLoaded', function () {
+  const containerInicio = document.getElementById('container-inicio');
+  const imgs = containerInicio.getElementsByTagName('img');
+  let current = 0;
+
+  // Establece la primera imagen visible al cargar
+  imgs[current].style.opacity = '1';
+
+  setInterval(() => {
+    const next = (current + 1) % imgs.length; // Determina la siguiente imagen
+
+    imgs[next].style.opacity = '1'; // Comienza a mostrar la siguiente imagen
+    imgs[current].style.opacity = '0'; // Oculta la imagen actual
+
+    current = next; // Actualiza el índice de la imagen actual
+  }, 8000); // Cambia imágenes cada 8 segundos
+});
+
+//efecto parallax
+window.addEventListener('scroll', function() {
+  var scrolled = window.scrollY;
+  var parallaxElements = document.querySelectorAll('.container-inicio img');
+  var factor;
+
+  if (window.innerWidth < 768) {
+    factor = 0;
+  } else {
+    factor = 0.5; 
+  }
+
+  parallaxElements.forEach(function(img) {
+    var val = scrolled * factor;
+    img.style.transform = 'translateY(' + val + 'px)';
+  });
+});
+
+
+/*//efecto que desaparece las imagenes
 let isThrottled = false;
 let lastScrollPosition = 0;
 
@@ -36,14 +75,4 @@ window.addEventListener('scroll', function() {
   }
 
   lastScrollPosition = scrollPosition;
-});
-
-function convertColorToRGBA(color, opacity) {
-  if (color.startsWith('rgba')) {
-      return color.replace(/rgba\(([^,]+),([^,]+),([^,]+),[^)]+\)/, `rgba($1,$2,$3,${opacity})`);
-  }
-  else if (color.startsWith('rgb')) {
-      return color.replace('rgb', 'rgba').replace(')', `,${opacity})`);
-  }
-  return color; 
-}
+});*/
