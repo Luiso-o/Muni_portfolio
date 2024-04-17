@@ -1,117 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>muniphotography</title>
-  <script src="https://kit.fontawesome.com/038b51b015.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../styles.css">
+  <title>En Construcción</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+video {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff5b;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Coloca el texto debajo del video */
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .text-content {
+      background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro para mejorar la lectura */
+      border-radius: 10px;
+      margin-top: 10px; /* Espacio entre el video y el texto */
+    }
+  }
+</style>
 
 <body>
-  <section id="header" class="encabezado">
-    <div class="container nav-container">
-      <nav class="navbar navbar-expand-lg justify-content-center">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/portraits.html">Portraits/Couples</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/familyFriends.html">Family/Friends</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/about.html">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/bookASession.html">Book a Session</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/clientCloset.html">Client Closet</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <div class="container">
+    <video src="../resources/trabajando.mp4" autoplay loop muted playsinline></video>
+    <div class="overlay">
+      <h1>Estamos trabajando en algo increíble.</h1>
+      <p>¡Nuestro sitio estará disponible muy pronto!</p>
+      <p>Gracias por tu paciencia.</p>
     </div>
-  </section>
-
-  <!--background header-->
-  <div class="header-container"></div>
-  
-    <div class="portraits-container">
-      <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <!-- Contenedor de Imagen -->
-          <div id="contenedorImagenes2" class="contenedor-imagenes"></div>
-        </div>
-        <div class="col-lg-6 mx-auto">
-          <!-- Contenedor de Texto -->
-          <h2>Portraits/Couples</h2>
-          <p>Hello! I'm A bigger rat, me gusta el pan, I am a passionate photographer from Ratita Landia. I specialize in pelear. My journey in photography began rat rat rat rat (*Explica en rata*). I believe in capturing moments that tell a story, and I'm dedicated to providing my clients with memories that last a lifetime. Thank you for visiting my site!</p>
-          <p>My Hobbies</p>
-          <ul>
-            <li>Dormir 😴</li>
-            <li>Comer 🍽️</li>
-            <li>Pelear 🥊</li>
-            <li>Recoger pijo trash 🗑️</li>
-            <li>Comprar ropa en Humana 🛍️</li>
-            <li>Plantitas 🌱</li>
-            <li>Second hand ♻️</li>
-            <li>Doguitos 🐶</li>
-            <li>Anti fast fashion 😎</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  <section class="footer">
-    <footer class="text-center py-3">
-      <div class="container">
-        <div class="row">
-          <p>Visit my social networks</p>
-        </div>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col">
-            <a href="https://www.facebook.com/muniphotography.barcelona?locale=es_ES" class="me-4" target="_blank"
-              rel="noopener noreferrer">
-              <i class="fab fa-facebook-f fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/muni.photography" class="me-4" target="_blank">
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.pinterest.es/muniphotography/" class="me-4" target="_blank">
-              <i class="fa-brands fa-pinterest-p fa-2x"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col">
-            <p>© <span id="current-year"></span><a href="https://luiso-o.github.io/portafolio/" class="portfolio-link"
-                target="_blank"> Luis Trujillo Portillo.</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
-
-  <script src="/js/footer.js"></script>
-  <script src="/js/header.js"></script>
-  <script src="/js/photoTransition.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
- 
+  </div>
 </body>
 
 </html>

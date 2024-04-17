@@ -1,0 +1,92 @@
+$text-color: #556B2F;
+$white: white;
+$background: #d7c7af; 
+
+.description {
+  padding: 20px;
+  background-color: $background; 
+}
+
+.card {
+    width: 100%;
+    padding: 6px 6px 50px 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: $white;
+    transform: rotate(4deg);
+    overflow: hidden;
+    top: -150px; 
+  }
+
+  .card img {
+    width: calc(100% - 20px);
+    height: auto; 
+    display: block; 
+    margin: 10px; 
+  }
+
+  .text {
+    position: relative; 
+    top: -70px;
+
+    h1, p, hr{
+      color: $text-color;
+    }
+
+    h1{
+      font-weight: bold;
+    }
+  }
+
+  .btn-primary {
+    width: 200px;
+    border-radius: 15px;
+    background-color: $text-color; 
+    border-color: $background; 
+}
+
+.btn-primary:hover {
+    background-color: $background; 
+    border-color: $text-color; 
+    color: $text-color; 
+}
+
+.btn-primary a {
+    color: $white; 
+    text-decoration: none; 
+}
+
+@media (max-width: 767px) {
+  .description {
+    padding: 10px; 
+  }
+
+  .card {
+    width: 40%;
+    padding: 3px 3px 25px 3px; 
+    transform: rotate(3deg); 
+    left: 50%;
+    top: -50px; 
+  }
+
+  .text{
+    top: -40px;
+  }
+}
+
+@media (min-width: 767px) {
+  .description {
+    padding: 10px; 
+  }
+
+  .card {
+    width: 100%;
+    padding: 3px 3px 25px 3px; 
+    transform: rotate(2deg); 
+    top: -50px; 
+  }
+
+  .text{
+    top: 0;
+  }
+}
