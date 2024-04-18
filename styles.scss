@@ -1,12 +1,14 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+//estilos menu
 @import "./scss/header";
 @import "./scss/inicio.scss";
 @import "./scss/description.scss";
-@import "./scss/gallery.scss";
 @import "./scss/footer";
 
+//estilos sub-menu
 @import "./scss/aboutMe.scss";
+@import "./scss/portraits.scss";
 
 $background: #f3edda; //color prederminado
 $general-font: "Josefin Sans", sans-serif;

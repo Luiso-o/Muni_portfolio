@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('resources/images.json')
+/*document.addEventListener('DOMContentLoaded', function() {
+    fetch('../resources/images.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok.');
             return response.json();
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             initializeModalListeners();
         })
         .catch(error => console.error('Error fetching the images:', error));
-});
+});*/
 
 //modal
 function initializeModalListeners() {
