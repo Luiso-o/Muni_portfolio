@@ -7,9 +7,8 @@ $background: #d7c7af;
   background-color: $background; 
 }
 
-.card {
-    width: 100%;
-    padding: 6px 6px 50px 6px;
+.card-init {
+    padding: 1px 1px 60px 1px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     background-color: $white;
@@ -18,7 +17,7 @@ $background: #d7c7af;
     top: -150px; 
   }
 
-  .card img {
+  .card-init img {
     width: calc(100% - 20px);
     height: auto; 
     display: block; 
@@ -38,22 +37,19 @@ $background: #d7c7af;
     }
   }
 
-  .btn-primary {
-    width: 200px;
-    border-radius: 15px;
-    background-color: $text-color; 
-    border-color: $background; 
+.description-buttom {
+  width: 200px;
+  border-radius: 15px;
+  background-color: $text-color; 
+  border-color: $background; 
+  color: $white;
+  text-decoration: none; 
 }
 
-.btn-primary:hover {
+.description-buttom:hover {
     background-color: $background; 
     border-color: $text-color; 
     color: $text-color; 
-}
-
-.btn-primary a {
-    color: $white; 
-    text-decoration: none; 
 }
 
 @media (max-width: 767px) {
@@ -61,7 +57,7 @@ $background: #d7c7af;
     padding: 10px; 
   }
 
-  .card {
+  .card-init {
     width: 40%;
     padding: 3px 3px 25px 3px; 
     transform: rotate(3deg); 
@@ -79,7 +75,7 @@ $background: #d7c7af;
     padding: 10px; 
   }
 
-  .card {
+  .card-init {
     width: 100%;
     padding: 3px 3px 25px 3px; 
     transform: rotate(2deg); 
