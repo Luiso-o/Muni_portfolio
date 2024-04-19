@@ -81,6 +81,10 @@ $toggler-color: #37451f;
   }
 }
 
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .navbar-toggler {
   cursor: pointer;
   border: none;
