@@ -1,12 +1,12 @@
 $background: linear-gradient(to bottom, #85956A 40%, #a9bf83 60%);
 $white: white;
 
-body{
-  background: $background
+.portraits-body{
+  background: $background;
 }
 
 .portraits {
-  padding: 20px;
+margin-top: 40px;
 }
 
 .portraits-container {
@@ -43,9 +43,8 @@ body{
 }
 
 //-------------------------- imagenes --------------------------------
-
-.portraits-gallery{
-  margin-bottom: 20px;
+#imageRow{
+  padding-bottom: 20px;
 }
 
 img{
