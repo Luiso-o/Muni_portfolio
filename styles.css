@@ -12022,10 +12022,9 @@ textarea.form-control-lg {
 }
 
 .dropdown-menu {
-  color: white;
-  background: rgba(0, 0, 0, 0.187);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+  background: #556B2F;
 }
 
 .dropdown-item {
@@ -12234,34 +12233,17 @@ textarea.form-control-lg {
   padding: 0;
 }
 
-.content {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  background: rgb(255, 247, 234);
-  height: 50vh;
-}
-
-.content-2 {
-  margin-top: 100px;
-}
-
-.content-3 {
-  margin-top: 100px;
-}
-
 .parallax {
   background-image: url("../gallery/familyFriends/familyFriends12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 60vh;
+  min-height: 90vh;
 }
 
-.content-2, .content-3 {
-  margin-top: 0;
+.aboutme {
+  background-color: white;
+  color: #556B2F;
 }
 
 body {

@@ -67,9 +67,9 @@ $toggler-color: #37451f;
 }
 
 .dropdown-menu {
-  color: white;
-  background: rgba(0, 0, 0, 0.187);
-  backdrop-filter: blur(10px);
+  color: $text-color;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+  background: #556B2F;
 }
 
 .dropdown-item {
