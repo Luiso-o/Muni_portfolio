@@ -11,14 +11,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(window).scroll(function () {
-  var scrolled = $(window).scrollTop();
-  var newPos = Math.min(0, -scrolled * 0.3); 
-  $('.parallax').css('background-position', 'center ' + newPos + 'px');
-});
-</script>
 
 <!--oncontextmenu="return false"-->
 <body>
@@ -60,21 +52,62 @@ $(window).scroll(function () {
     </nav>
   </header>
 
-  <div class="parallax-container">
-    <div class="parallax"></div>
-    <div class="content content-1">
-      <h1>contenido 1</h1>
+  <section class="aboutme" id="aboutme">
+    <!-- Primera sección de Parallax -->
+    <div class="parallax-container">
+      <div class="parallax"></div>
     </div>
-    <div class="parallax"></div>
-    <div class="content content-2">
-      <h1>contenido 2</h1>
+  
+    <!-- Contenido 1 -->
+    <div class="container container-info">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1>Contenido 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quibusdam, corporis pariatur sequi ducimus quidem asperiores tempore, laboriosam obcaecati fugiat minus, officiis mollitia cupiditate! Quae incidunt dignissimos non similique dolorum in et numquam asperiores fuga repudiandae consectetur architecto iusto harum, quibusdam veritatis laboriosam quo itaque rerum eaque? Iusto, cumque nulla.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="/gallery/couples/couples10.jpg" loading="lazy" alt="img" class="img-fluid">
+        </div>
+      </div>
     </div>
-    <div class="parallax"></div>
-    <div class="content content-3">
-      <h1>contenido 3</h1>
+  
+    <!-- Segunda sección de Parallax -->
+    <div class="parallax-container">
+      <div class="parallax"></div>
     </div>
-  </div>
-
+  
+    <!-- Contenido 2 -->
+    <div class="container container-info">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="/gallery/familyFriends/familyFriends15.jpg" alt="img" loading="lazy" alt="img" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h1>Contenido 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius asperiores? Natus, rerum necessitatibus quas voluptatum porro cum unde, qui ipsam reprehenderit eaque, deserunt doloremque!</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Tercera sección de Parallax -->
+    <div class="parallax-container">
+      <div class="parallax"></div>
+    </div>
+  
+    <!-- Contenido 3 -->
+    <div class="container container-info">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1>Contenido 3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vero? Maxime, quae corrupti eius sunt possimus culpa libero soluta sapiente.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="/gallery/potraits/portraits14.jpg" alt="img" loading="lazy" alt="img" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="footer">
     <footer class="text-center py-3">
       <div class="container">
@@ -109,9 +142,22 @@ $(window).scroll(function () {
     </footer>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/js/header.js"></script>
   <script src="/js/footer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  window.addEventListener('scroll', function() {
+  var scrolled = window.pageYOffset;
+  var parallaxElements = document.querySelectorAll('.parallax-container .parallax');
+
+  parallaxElements.forEach(function(elem) {
+    var newPos = Math.min(0, -scrolled * 0.3);
+    elem.style.backgroundPosition = 'center ' + newPos + 'px';
+  });
+});
+
+  </script>
+
 </body>
 
 </html>
