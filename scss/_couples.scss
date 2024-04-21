@@ -1,12 +1,12 @@
 $background: linear-gradient(to bottom, #85956A 40%, #a9bf83 60%);
 $white: white;
 
-body{
+.couples-body{
   background: $background
 }
 
 .couples {
-  padding: 20px;
+  margin-top: 40px;
 }
 
 .couples-container {
@@ -44,8 +44,8 @@ body{
 
 //-------------------------- imagenes --------------------------------
 
-.couples-gallery{
-  margin-bottom: 20px;
+#imageRow{
+  padding-bottom: 20px;
 }
 
 img{

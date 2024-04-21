@@ -15,151 +15,88 @@
 <!--oncontextmenu="return false"-->
 
 <body>
-  <header class="header fixed-top" id="header">
-    <nav class="container navbar navbar-expand-lg" role="navigation">
-      <!-- Toggler para dispositivos móviles -->
-      <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
-        <i class="fas fa-bars"></i>
-      </span>
 
-      <!-- Navegación principal -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <button class="nav-link" href="#" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li><a class="dropdown-item" href="/html/portraits.html">Portrait</a></li>
-              <li><a class="dropdown-item" href="/html/couples.html">Couples</a></li>
-              <li><a class="dropdown-item" href="/html/familyFriends.html">Family/Friends</a></li>
-              <li><a class="dropdown-item" href="#">Brandings</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <img src="/resources/logo-Muni2.png" alt="Logo de Muni" width="50" height="50">
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/html/bookASession.html">Book a Session</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/html/about.html">About me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <div id="header-placeholder"></div>
 
-  <section class="familyFriends" id="familyFriends">
-    <div class="container familyFriends-container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-12">
-          <div class="row align-items-center"> 
-            <div class="col-md-4">
-              <div class="card card-familyFriends card-familyFriends1">
-                <img src="../gallery/familyFriends/familyFriends5.jpg" loading="lazy" alt="Portrait Image">
+  <main class="familyFriends-body">
+
+    <section class="familyFriends" id="familyFriends">
+      <div class="container familyFriends-container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="card card-familyFriends card-familyFriends1">
+                  <img src="../gallery/familyFriends/familyFriends5.jpg" loading="lazy" alt="Portrait Image">
+                </div>
+                <div class="card card-familyFriends card-familyFriends2">
+                  <img src="../gallery/familyFriends/familyFriends14.jpg" loading="lazy" alt="Portrait Image">
+                </div>
               </div>
-              <div class="card card-familyFriends card-familyFriends2">
-                <img src="../gallery/familyFriends/familyFriends14.jpg" loading="lazy" alt="Portrait Image">
+              <div class="col-md-8 d-flex flex-column justify-content-center">
+                <h1>Capture your happy moments</h1>
+                <h2>Family & Friends</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quisquam vero dicta tenetur fugit
+                  veritatis quod velit, officiis et incidunt veniam pariatur commodi nihil exercitationem nesciunt
+                  sapiente facilis? Veritatis, voluptatum nesciunt aperiam, vel dignissimos, at ducimus voluptas sit
+                  consequatur expedita ipsa modi dolore eum! Maiores perferendis excepturi velit corrupti iure!</p>
+                <hr>
               </div>
-            </div>
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-              <h1>Capture your happy moments</h1>
-              <h2>Family & Friends</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quisquam vero dicta tenetur fugit
-                veritatis quod velit, officiis et incidunt veniam pariatur commodi nihil exercitationem nesciunt
-                sapiente facilis? Veritatis, voluptatum nesciunt aperiam, vel dignissimos, at ducimus voluptas sit
-                consequatur expedita ipsa modi dolore eum! Maiores perferendis excepturi velit corrupti iure!</p>
-              <hr>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="familyFriends-gallery">
-    <div class="container">
-      <div id="myModal" class="modal">
-        <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
-        <img class="modal-content" id="imgModal">
-        <div id="caption"></div>
-        <a class="prev"><i class="fa-solid fa-caret-left"></i></a>
-        <a class="next"><i class="fa-solid fa-caret-right"></i></a>
-      </div>
-      <div class="row" id="imageRow">
-        <div class="column">
-          <img src="../gallery/familyFriends/familyFriends1.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends2.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends3.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends4.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends5.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends6.jpg" loading="lazy" alt="">
-        </div>
-        <div class="column">
-          <img src="../gallery/familyFriends/familyFriends7.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends8.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends9.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends10.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends11.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends12.jpg" loading="lazy" alt="">
-        </div>
-        <div class="column">         
-          <img src="../gallery/familyFriends/familyFriends13.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends14.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends15.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends16.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends17.jpg" loading="lazy" alt="">
-        </div>
-        <div class="column">
-          <img src="../gallery/familyFriends/familyFriends18.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends19.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends20.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends21.jpg" loading="lazy" alt="">
-          <img src="../gallery/familyFriends/familyFriends22.jpg" loading="lazy" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="footer">
-    <footer class="text-center py-3">
+    <section class="familyFriends-gallery">
       <div class="container">
-        <div class="row">
-          <p>Visit my social networks</p>
+        <div id="myModal" class="modal">
+          <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+          <img class="modal-content" id="imgModal">
+          <div id="caption"></div>
+          <a class="prev"><i class="fa-solid fa-caret-left"></i></a>
+          <a class="next"><i class="fa-solid fa-caret-right"></i></a>
         </div>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col">
-            <a href="https://www.facebook.com/muniphotography.barcelona?locale=es_ES" class="me-4" target="_blank"
-              rel="noopener noreferrer">
-              <i class="fab fa-facebook-f fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/muni.photography" class="me-4" target="_blank">
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.pinterest.es/muniphotography/" class="me-4" target="_blank">
-              <i class="fa-brands fa-pinterest-p fa-2x"></i>
-            </a>
+        <div class="row" id="imageRow">
+          <div class="column">
+            <img src="../gallery/familyFriends/familyFriends1.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends2.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends3.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends4.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends5.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends6.jpg" loading="lazy" alt="">
+          </div>
+          <div class="column">
+            <img src="../gallery/familyFriends/familyFriends7.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends8.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends9.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends10.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends11.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends12.jpg" loading="lazy" alt="">
+          </div>
+          <div class="column">
+            <img src="../gallery/familyFriends/familyFriends13.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends14.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends15.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends16.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends17.jpg" loading="lazy" alt="">
+          </div>
+          <div class="column">
+            <img src="../gallery/familyFriends/familyFriends18.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends19.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends20.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends21.jpg" loading="lazy" alt="">
+            <img src="../gallery/familyFriends/familyFriends22.jpg" loading="lazy" alt="">
           </div>
         </div>
       </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col">
-            <p>© <span id="current-year"></span><a href="https://luiso-o.github.io/portafolio/" class="portfolio-link"
-                target="_blank"> Luis Trujillo Portillo.</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
+    </section>
 
-  <script src="/js/header.js"></script>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/common.js"></script>
   <script src="/js/modal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

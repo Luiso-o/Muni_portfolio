@@ -12246,12 +12246,12 @@ textarea.form-control-lg {
   color: #556B2F;
 }
 
-body {
+.portraits-body {
   background: linear-gradient(to bottom, #85956A 40%, #a9bf83 60%);
 }
 
 .portraits {
-  padding: 20px;
+  margin-top: 40px;
 }
 
 .portraits-container {
@@ -12287,8 +12287,8 @@ body {
   transform: rotate(5deg);
 }
 
-.portraits-gallery {
-  margin-bottom: 20px;
+#imageRow {
+  padding-bottom: 20px;
 }
 
 img {
@@ -12402,12 +12402,12 @@ img {
     flex-basis: 100%;
   }
 }
-body {
+.couples-body {
   background: linear-gradient(to bottom, #85956A 40%, #a9bf83 60%);
 }
 
 .couples {
-  padding: 20px;
+  margin-top: 40px;
 }
 
 .couples-container {
@@ -12443,8 +12443,8 @@ body {
   transform: rotate(5deg);
 }
 
-.couples-gallery {
-  margin-bottom: 20px;
+#imageRow {
+  padding-bottom: 20px;
 }
 
 img {
@@ -12558,12 +12558,12 @@ img {
     flex-basis: 100%;
   }
 }
-body {
+.familyFriends-body {
   background: linear-gradient(to bottom, #85956A 40%, #a9bf83 60%);
 }
 
 .familyFriends {
-  padding: 20px;
+  margin-top: 40px;
 }
 
 .familyFriends-container {
@@ -12599,19 +12599,12 @@ body {
   transform: rotate(5deg);
 }
 
-.familyFriends-gallery {
-  margin-bottom: 20px;
-}
-
 img {
   width: 100%;
 }
 
-.row-img {
-  position: relative;
-  display: flex;
-  padding: 5px;
-  flex-wrap: wrap;
+#imageRow {
+  padding-bottom: 20px;
 }
 
 .column {

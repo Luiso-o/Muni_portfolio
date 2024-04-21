@@ -1,15 +1,15 @@
 $background: linear-gradient(to bottom, #85956A 40%, #a9bf83 60%);
 $white: white;
 
-body{
+.familyFriends-body{
   background: $background
 }
 
 .familyFriends {
-  padding: 20px;
+  margin-top:40px;
 }
 
-.familyFriends-container {
+.familyFriends-container{
   padding: 40px;
 }
 
@@ -43,20 +43,12 @@ body{
 }
 
 //-------------------------- imagenes --------------------------------
-
-.familyFriends-gallery{
-  margin-bottom: 20px;
-}
-
 img{
   width: 100%;
 }
 
-.row-img{
-  position: relative;
-  display: flex;
-  padding: 5px;
-  flex-wrap: wrap;
+#imageRow{
+padding-bottom: 20px;
 }
 
 .column{
