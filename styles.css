@@ -11969,7 +11969,7 @@ textarea.form-control-lg {
   background: #556B2F;
 }
 
-.collapse, .navbar-nav {
+.navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11977,6 +11977,12 @@ textarea.form-control-lg {
   list-style: none;
   padding-left: 0;
   gap: 80px;
+}
+
+.logo {
+  width: 25%;
+  height: 60px;
+  background: url(../resources/logo-Muni2.png) no-repeat center/contain;
 }
 
 .nav-link {
@@ -12096,6 +12102,9 @@ textarea.form-control-lg {
   .navbar-nav {
     flex-direction: column;
     gap: 10px;
+  }
+  .logo {
+    width: 40%;
   }
 }
 .container-inicio {
