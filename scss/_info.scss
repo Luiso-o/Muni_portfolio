@@ -1,0 +1,35 @@
+.container-info {
+  margin-top: 20px;  /* Agrega espacio arriba de cada contenedor de contenido */
+  margin-bottom: 20px;  /* Agrega espacio debajo de cada contenedor de contenido */
+}
+
+.parallax {
+  min-height: 100vh;  /* Asegura que el contenedor tenga al menos la altura de la ventana */
+  background-image: url('/gallery/couples/couples7.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px; /* Ajusta según necesidad para empujar el contenido hacia abajo */
+}
+
+.container-info {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  color: #556B2F;
+  background-color: white;
+  padding: 20px; 
+  box-sizing: border-box; 
+  position: relative;
+  z-index: 1;
+  margin-top: 400px;
+
+  .container{
+    width: 70%;
+  }
+
+  h1{
+    font-weight: bold;
+  }
+}

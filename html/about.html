@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -12,84 +12,90 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 
-<!--oncontextmenu="return false"-->
 <body>
 
   <div id="header-placeholder"></div>
 
-  <section class="aboutme" id="aboutme">
-    <!-- Primera sección de Parallax -->
-    <div class="parallax-container">
-      <div class="parallax"></div>
+  <main>
+
+    <div class="contenedor-1">
+    <div class="parallax-background" data-image-src="../resources/background-img/background1.jpg">
+      <div class="parallax-about"></div>
     </div>
-  
+
     <!-- Contenido 1 -->
-    <div class="container container-info">
+    <div class="container-about">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h1>Contenido 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quibusdam, corporis pariatur sequi ducimus quidem asperiores tempore, laboriosam obcaecati fugiat minus, officiis mollitia cupiditate! Quae incidunt dignissimos non similique dolorum in et numquam asperiores fuga repudiandae consectetur architecto iusto harum, quibusdam veritatis laboriosam quo itaque rerum eaque? Iusto, cumque nulla.</p>
+          <h2>About Me</h2>
+          <p>Hello! I'm A bigger rat, me gusta el pan, I am a passionate photographer from Ratita Landia. I specialize in pelear. My journey in photography began rat rat rat rat (*Explica en rata*). I believe in capturing moments that tell a story, and I'm dedicated to providing my clients with memories that last a lifetime. Thank you for visiting my site!</p>
+          <p>My Hobbies</p>
+          <ul>
+            <li>Dormir 😴</li>
+            <li>Comer 🍽️</li>
+            <li>Pelear 🥊</li>
+            <li>Recoger pijo trash 🗑️</li>
+            <li>Comprar ropa en Humana 🛍️</li>
+            <li>Plantitas 🌱</li>
+            <li>Second hand ♻️</li>
+            <li>Doguitos 🐶</li>
+            <li>Anti fast fashion 😎</li>
+          </ul>
         </div>
         <div class="col-md-6">
-          <img src="/gallery/couples/couples10.jpg" loading="lazy" alt="img" class="img-fluid">
+          <img src="/gallery/couples/couples10.jpg" loading="lazy" alt="Pareja" class="img-fluid">
         </div>
       </div>
     </div>
-  
-    <!-- Segunda sección de Parallax -->
-    <div class="parallax-container">
-      <div class="parallax"></div>
+  </div>
+   
+  <div class="contenedor-2">
+    <div class="parallax-background" data-image-src="../resources/background-img/background2.jpg">
+      <div class="parallax-about"></div>
     </div>
-  
+
     <!-- Contenido 2 -->
-    <div class="container container-info">
+    <div class="container-about">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="/gallery/familyFriends/familyFriends15.jpg" alt="img" loading="lazy" alt="img" class="img-fluid">
+          <img src="/gallery/familyFriends/familyFriends15.jpg" loading="lazy" alt="Familia y amigos" class="img-fluid">
         </div>
         <div class="col-md-6">
           <h1>Contenido 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius asperiores? Natus, rerum necessitatibus quas voluptatum porro cum unde, qui ipsam reprehenderit eaque, deserunt doloremque!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eius asperiores? Natus, rerum
+            necessitatibus quas voluptatum porro cum unde, qui ipsam reprehenderit eaque, deserunt doloremque!</p>
         </div>
       </div>
     </div>
-  
-    <!-- Tercera sección de Parallax -->
-    <div class="parallax-container">
-      <div class="parallax"></div>
+  </div>
+
+  <div class="contenedor-3">
+    <div class="parallax-background" data-image-src="../resources/background-img/background3.jpg">
+      <div class="parallax-about"></div>
     </div>
-  
+
     <!-- Contenido 3 -->
-    <div class="container container-info">
+    <div class="container-about">
       <div class="row align-items-center">
         <div class="col-md-6">
           <h1>Contenido 3</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vero? Maxime, quae corrupti eius sunt possimus culpa libero soluta sapiente.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vero? Maxime, quae corrupti eius
+            sunt
+            possimus culpa libero soluta sapiente.</p>
         </div>
         <div class="col-md-6">
-          <img src="/gallery/potraits/portraits14.jpg" alt="img" loading="lazy" alt="img" class="img-fluid">
+          <img src="/gallery/potraits/portraits14.jpg" loading="lazy" alt="Retrato" class="img-fluid">
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+  </main>
+
   <div id="footer-placeholder"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/about.js"></script>
   <script src="/js/common.js"></script>
-  <script src="/js/footer.js"></script>
-  <script>
-  window.addEventListener('scroll', function() {
-  var scrolled = window.pageYOffset;
-  var parallaxElements = document.querySelectorAll('.parallax-container .parallax');
-
-  parallaxElements.forEach(function(elem) {
-    var newPos = Math.min(0, -scrolled * 0.3);
-    elem.style.backgroundPosition = 'center ' + newPos + 'px';
-  });
-});
-
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

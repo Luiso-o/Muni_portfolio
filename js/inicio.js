@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     imgs[current].style.opacity = '0'; 
 
     current = next; 
-  }, 8000); 
+  }, 5000); 
 });
 
 //efecto parallax

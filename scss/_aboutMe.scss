@@ -1,14 +1,20 @@
-.parallax {
-  background-image: url('../gallery/familyFriends/familyFriends12.jpg');
+.parallax-about {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   min-height: 90vh; 
 }
 
-.aboutme{
-  background-color: white;
-  color:#556B2F;
+.container-about {
+  width: 100%;
+  color: #556B2F;
+  background-color: rgba(240, 248, 255);
+  padding: 20px; 
+  box-sizing: border-box; 
+  position: relative;
+  z-index: 1;
+
+  h2{
+    font-weight: bold;
+  }
 }
-
-

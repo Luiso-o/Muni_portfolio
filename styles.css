@@ -12141,7 +12141,7 @@ textarea.form-control-lg {
 }
 .description {
   padding: 20px;
-  background-color: #d7c7af;
+  background-color: white;
 }
 
 .card-init {
@@ -12216,6 +12216,40 @@ textarea.form-control-lg {
     top: 0;
   }
 }
+.container-info {
+  margin-top: 20px; /* Agrega espacio arriba de cada contenedor de contenido */
+  margin-bottom: 20px; /* Agrega espacio debajo de cada contenedor de contenido */
+}
+
+.parallax {
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana */
+  background-image: url("/gallery/couples/couples7.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px; /* Ajusta según necesidad para empujar el contenido hacia abajo */
+}
+
+.container-info {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  color: #556B2F;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  margin-top: 400px;
+}
+.container-info .container {
+  width: 70%;
+}
+.container-info h1, .container-info .h1 {
+  font-weight: bold;
+}
+
 .footer {
   background-color: #556B2F;
 }
@@ -12242,17 +12276,24 @@ textarea.form-control-lg {
   padding: 0;
 }
 
-.parallax {
-  background-image: url("../gallery/familyFriends/familyFriends12.jpg");
+.parallax-about {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 90vh;
 }
 
-.aboutme {
-  background-color: white;
+.container-about {
+  width: 100%;
   color: #556B2F;
+  background-color: rgb(240, 248, 255);
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.container-about h2, .container-about .h2 {
+  font-weight: bold;
 }
 
 .portraits-body {
