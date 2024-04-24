@@ -12223,7 +12223,7 @@ textarea.form-control-lg {
 
 .parallax {
   min-height: 100vh;
-  background-image: url("/gallery/couples/couples7.jpg");
+  background-image: url(/gallery/couples/couples7.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -12241,10 +12241,10 @@ textarea.form-control-lg {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  margin-top: 400px;
+  margin-top: 500px;
 }
 .container-info .container {
-  width: 70%;
+  width: 60%;
 }
 .container-info h1, .container-info .h1 {
   font-weight: bold;
