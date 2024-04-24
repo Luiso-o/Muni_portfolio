@@ -11,7 +11,6 @@ function initializeModalListeners() {
         img.addEventListener('click', () => {
             modal.style.display = "flex";
             modalImg.src = img.src;
-            caption.textContent = img.alt; 
             header.style.display = "none";
             currentIndex = index;
         });
@@ -44,13 +43,11 @@ function initializeModalListeners() {
     prevButton.addEventListener('click', () => {
         currentIndex = (currentIndex + images.length - 1) % images.length;
         modalImg.src = images[currentIndex].src;
-        caption.textContent = images[currentIndex].alt;
     });
 
     nextButton.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length;
         modalImg.src = images[currentIndex].src;
-        caption.textContent = images[currentIndex].alt;
     });
 }
 

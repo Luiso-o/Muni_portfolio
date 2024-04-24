@@ -2,12 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const placeholders = {
       header: document.getElementById("header-placeholder"),
       footer: document.getElementById("footer-placeholder"),
-      //gallery: document.getElementById("gallery-placeholder")
     };
   
     function loadContent(type) {
       if (placeholders[type]) {
-        fetch(`/html/${type}.html`)
+        fetch(`../html/${type}.html`)
           .then(response => {
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
