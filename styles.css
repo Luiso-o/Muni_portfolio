@@ -12223,7 +12223,7 @@ textarea.form-control-lg {
 
 .parallax {
   min-height: 100vh;
-  background-image: url(/gallery/couples/couples7.jpg);
+  background: url(gallery/couples/couples7.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
