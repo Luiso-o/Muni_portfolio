@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       }
 
       try {
-          const response = await fetch(`/html/${type}.html`);
+          const response = await fetch(`../html/${type}.html`);
           if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
           }
