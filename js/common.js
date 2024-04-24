@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", async function() {
             return;
         }
   
-        // Determina la base URL basándote en el entorno
-        const base_url = window.location.hostname === 'localhost' ? '.' : '';
-  
         try {
-            const response = await fetch(`${base_url}/html/${type}.html`);
+            const response = await fetch(`html/${type}.html`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -31,4 +28,3 @@ document.addEventListener("DOMContentLoaded", async function() {
         await loadContent(type);
     }
   });
-  
