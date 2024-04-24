@@ -3,7 +3,7 @@ function initializeModalListeners() {
     const modal = document.getElementById("myModal");
     const modalImg = document.getElementById("imgModal");
     const caption = document.getElementById('caption'); 
-    const header = document.getElementById('header-placeholder'); 
+    const header = document.getElementById('header'); 
     let currentIndex = 0;
 
     // Agregar listener a cada imagen para abrir el modal

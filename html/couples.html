@@ -15,7 +15,43 @@
 <!--oncontextmenu="return false"-->
 <body>
 
-   <div id="header-placeholder"></div>
+  <header class="header fixed-top" id="header">
+    <nav class="container navbar navbar-expand-lg" role="navigation">
+      <!-- Toggler para dispositivos móviles -->
+      <span class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </span>
+  
+      <div class="logo"></div>
+  
+      <!-- Navegación principal -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="nav-link" href="#" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="../html/portraits.html">Portrait</a></li>
+              <li><a class="dropdown-item" href="../html/couples.html">Couples</a></li>
+              <li><a class="dropdown-item" href="../html/familyFriends.html">Family/Friends</a></li>
+              <li><a class="dropdown-item" href="../html/brandings.html">Brandings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/bookASession.html">Book a Session</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/about.html">About me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>  
 
   <main class="couples-body">
 
@@ -95,7 +131,39 @@
 
 </main>
 
-<div id="footer-placeholder"></div>
+<section class="footer">
+  <footer class="text-center py-3">
+    <div class="container">
+      <div class="row">
+        <p>Visit my social networks</p>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+          <a href="https://www.facebook.com/muniphotography.barcelona?locale=es_ES" class="me-4" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/muni.photography" class="me-4" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.pinterest.es/muniphotography/" class="me-4" target="_blank">
+            <i class="fa-brands fa-pinterest-p fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+          <p>© <span id="current-year"></span><a href="https://luiso-o.github.io/portafolio/" class="portfolio-link"
+              target="_blank"> Luis Trujillo Portillo.</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
 
   <script src="/js/modal.js"></script>
   <script src="/js/common.js"></script>
