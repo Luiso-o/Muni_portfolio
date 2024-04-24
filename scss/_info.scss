@@ -1,16 +1,16 @@
 .container-info {
-  margin-top: 20px;  /* Agrega espacio arriba de cada contenedor de contenido */
-  margin-bottom: 20px;  /* Agrega espacio debajo de cada contenedor de contenido */
+  margin-top: 20px;  
+  margin-bottom: 20px;  
 }
 
 .parallax {
-  min-height: 100vh;  /* Asegura que el contenedor tenga al menos la altura de la ventana */
+  min-height: 100vh; 
   background-image: url('/gallery/couples/couples7.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px; /* Ajusta según necesidad para empujar el contenido hacia abajo */
+  padding-top: 100px; 
 }
 
 .container-info {
