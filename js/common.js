@@ -1,25 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const placeholders = {
+document.addEventListener("DOMContentLoaded", async function() {
+  const placeholders = {
       header: document.getElementById("header-placeholder"),
       footer: document.getElementById("footer-placeholder"),
-    };
-  
-    function loadContent(type) {
-      if (placeholders[type]) {
-        fetch(`../html/${type}.html`)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text();
-          })
-          .then(data => placeholders[type].innerHTML = data)
-          .catch(error => console.error(`Failed to load ${type} content: `, error));
-      } else {
-        console.error(`Placeholder for ${type} does not exist.`);
+  };
+
+  async function loadContent(type) {
+      const placeholder = placeholders[type];
+      if (!placeholder) {
+          console.error(`Placeholder for ${type} does not exist.`);
+          return;
       }
-    }
-  
-    ['header', 'footer'].forEach(loadContent);
-  });
-  
+
+      try {
+          const response = await fetch(`/html/${type}.html`);
+          if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.text();
+          placeholder.innerHTML = data;
+      } catch (error) {
+          console.error(`Failed to load ${type} content: `, error);
+      }
+  }
+
+  const contentTypes = ['header', 'footer'];
+  for (const type of contentTypes) {
+      await loadContent(type);
+  }
+});
